@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/heightmap.bmp</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/shatteredworlds3.png</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/ground1.jpg</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Effects/DiffuseTexture.fx</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/ground_texture.jpg</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/dirt.jpg</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/gerard.jpg</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Effects/DiffSpecTex.fx</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/sphere.jpg</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/heightmap2.jpg</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/heightmap3.jpg</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/MyFont.spritefont</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/heightMap4.jpg</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/heightMap.png</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/grass3.jpg</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/rust.jpg</File>
+    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/steel.jpg</File>
+  </SourceFiles>
+</SourceFileCollection>

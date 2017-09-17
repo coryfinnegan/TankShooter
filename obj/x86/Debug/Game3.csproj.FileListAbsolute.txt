@@ -1,0 +1,74 @@
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Game3.exe
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Game3.pdb
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\MonoGame.Framework.dll
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\OpenTK.dll
+H:\Visual Studio 2013\Projects\Game3\Game3\obj\x86\Debug\Game3.csprojResolveAssemblyReference.cache
+H:\Visual Studio 2013\Projects\Game3\Game3\obj\x86\Debug\Game3.exe
+H:\Visual Studio 2013\Projects\Game3\Game3\obj\x86\Debug\Game3.pdb
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Content\Effects\DiffSpecTex.xnb
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Content\Effects\DiffuseTexture.xnb
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\dirt.xnb
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\gerard.xnb
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\ground1.xnb
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\ground_texture.xnb
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\heightmap.xnb
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\shatteredworlds3.xnb
+H:\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\sphere.xnb
+\\nrgcois-fp0\students\46675\4667511\Visual Studio 2013\Projects\Game3\Game3\obj\x86\Debug\Game3.exe
+\\nrgcois-fp0\students\46675\4667511\Visual Studio 2013\Projects\Game3\Game3\obj\x86\Debug\Game3.pdb
+\\nrgcois-fp0\students\46675\4667511\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Game3.exe
+\\nrgcois-fp0\students\46675\4667511\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\Game3.pdb
+\\nrgcois-fp0\students\46675\4667511\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\MonoGame.Framework.dll
+\\nrgcois-fp0\students\46675\4667511\Visual Studio 2013\Projects\Game3\Game3\bin\WindowsGL\Debug\OpenTK.dll
+\\nrgcois-fp0\students\46675\4667511\Visual Studio 2013\Projects\Game3\Game3\obj\x86\Debug\Game3.csprojResolveAssemblyReference.cache
+\\NRGCOIS-FP0\Students\46675\4667511\Game3\Game3\obj\x86\Debug\Game3.exe
+\\NRGCOIS-FP0\Students\46675\4667511\Game3\Game3\obj\x86\Debug\Game3.pdb
+\\NRGCOIS-FP0\Students\46675\4667511\Game3\Game3\bin\WindowsGL\Debug\Game3.exe
+\\NRGCOIS-FP0\Students\46675\4667511\Game3\Game3\bin\WindowsGL\Debug\Game3.pdb
+\\NRGCOIS-FP0\Students\46675\4667511\Game3\Game3\bin\WindowsGL\Debug\MonoGame.Framework.dll
+\\NRGCOIS-FP0\Students\46675\4667511\Game3\Game3\bin\WindowsGL\Debug\OpenTK.dll
+\\NRGCOIS-FP0\Students\46675\4667511\Game3\Game3\obj\x86\Debug\Game3.csprojResolveAssemblyReference.cache
+C:\Project\Game3\Game3\obj\x86\Debug\Game3.exe
+C:\Project\Game3\Game3\obj\x86\Debug\Game3.pdb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Game3.exe
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Game3.pdb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\MonoGame.Framework.dll
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\OpenTK.dll
+C:\Project\Game3\Game3\obj\x86\Debug\Game3.csprojResolveAssemblyReference.cache
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\Effects\DiffSpecTex.xnb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\Effects\DiffuseTexture.xnb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\dirt.xnb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\gerard.xnb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\ground1.xnb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\ground_texture.xnb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\heightmap.xnb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\heightmap2.xnb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\heightmap3.xnb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\shatteredworlds3.xnb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\sphere.xnb
+C:\Project\Game3\Game3\bin\WindowsGL\Debug\Content\MyFont.xnb
+C:\Projects\Game3\Game3\Game3\obj\x86\Debug\Game3.exe
+C:\Projects\Game3\Game3\Game3\obj\x86\Debug\Game3.pdb
+C:\Projects\Game3\Game3\Game3\obj\x86\Debug\Game3.csprojResolveAssemblyReference.cache
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Game3.exe.config
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\MyFont.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Effects\DiffSpecTex.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Effects\DiffuseTexture.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\dirt.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\gerard.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\ground1.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\ground_texture.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\heightmap.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\heightmap2.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\heightmap3.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\shatteredworlds3.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\sphere.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Game3.exe
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Game3.pdb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\MonoGame.Framework.dll
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\OpenTK.dll
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\NVorbis.dll
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\heightMap4.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\grass3.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\rust.xnb
+C:\Projects\Game3\Game3\Game3\bin\WindowsGL\Debug\Content\Textures\steel.xnb
