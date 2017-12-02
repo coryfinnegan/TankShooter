@@ -4,22 +4,22 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/heightmap.bmp</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/shatteredworlds3.png</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/ground1.jpg</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Effects/DiffuseTexture.fx</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/ground_texture.jpg</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/dirt.jpg</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/gerard.jpg</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Effects/DiffSpecTex.fx</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/sphere.jpg</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/heightmap2.jpg</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/heightmap3.jpg</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/MyFont.spritefont</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/heightMap4.jpg</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/heightMap.png</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/grass3.jpg</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/rust.jpg</File>
-    <File>C:/Projects/Game3/Game3/Game3/Content/Textures/steel.jpg</File>
+    <File>C:/Code/TankShooter/Content/Textures/heightmap.bmp</File>
+    <File>C:/Code/TankShooter/Content/Textures/shatteredworlds3.png</File>
+    <File>C:/Code/TankShooter/Content/Textures/ground1.jpg</File>
+    <File>C:/Code/TankShooter/Content/Effects/DiffuseTexture.fx</File>
+    <File>C:/Code/TankShooter/Content/Textures/ground_texture.jpg</File>
+    <File>C:/Code/TankShooter/Content/Textures/dirt.jpg</File>
+    <File>C:/Code/TankShooter/Content/Textures/gerard.jpg</File>
+    <File>C:/Code/TankShooter/Content/Effects/DiffSpecTex.fx</File>
+    <File>C:/Code/TankShooter/Content/Textures/sphere.jpg</File>
+    <File>C:/Code/TankShooter/Content/Textures/heightmap2.jpg</File>
+    <File>C:/Code/TankShooter/Content/Textures/heightmap3.jpg</File>
+    <File>C:/Code/TankShooter/Content/MyFont.spritefont</File>
+    <File>C:/Code/TankShooter/Content/Textures/heightMap4.jpg</File>
+    <File>C:/Code/TankShooter/Content/Textures/heightMap.png</File>
+    <File>C:/Code/TankShooter/Content/Textures/grass3.jpg</File>
+    <File>C:/Code/TankShooter/Content/Textures/rust.jpg</File>
+    <File>C:/Code/TankShooter/Content/Textures/steel.jpg</File>
   </SourceFiles>
 </SourceFileCollection>

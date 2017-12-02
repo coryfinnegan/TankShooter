@@ -7,9 +7,6 @@ using System.Collections.Generic;
 
 namespace Game1
 {
-    /// <summary>
-    /// This is the main type for your game.
-    /// </summary>
     public class Game1 : Game
     {
         GraphicsDeviceManager graphics;
@@ -24,11 +21,7 @@ namespace Game1
         BasicEffect ceffect;
         public int gDim = 100;
         public int numPrim;
-        //int y_draw_pos = -5;
-        //Color orange = new Color(255, 165, 0);
         public Matrix world = Matrix.Identity;
-
-        //new Code
         public Vector3 CameraPosition = new Vector3(100,100, 100);
         public Vector3 CameraDirection;
         public Vector3 CameraUp = Vector3.Up;
@@ -42,39 +35,23 @@ namespace Game1
         float CamXAngleCos;
         float CamYAngleSin;
         float CamYAngleCos;
-
         float cameraSpeed = 1f;
         Vector3 cameraRightAngle;
         Matrix cameraTranslation = Matrix.Identity;
-       
-        //Game 5 Fractal Terrain
         float[,] hts;
         Random rng;
-        
-        //Game 6 
         public Vector3[,] normals;
         float[,] lights;
         public Vector3 source = new Vector3(0, 1, 0);
         Vector3 lDir = new Vector3(0, 1, 0);
-        
-        //Vector4 lightPos = new Vector4(2, 2, 2, 2);
-
         Boolean flying;
-        Sphere aSphere;
         Sphere goalSphere;
         Tank tank;
-        Boolean tankBool = true;
-        //Sphere[] spheres;
-        
-        float ta;
-
+        Boolean tankBool = true;        
         VertexPositionNormalTexture[] pnverts;
         Texture2D groundTexture;
         Effect DiffuseTextureEffect;
-        //float texScale = 1f;
         float tTime;
-
-        
         public Vector4 Ambient;
         float ambientMult = 0.01f;
         Vector4 LightColor;
@@ -122,10 +99,9 @@ namespace Game1
         private static readonly Random random = new Random();
         private static readonly object syncLock = new object();
 
-
-
         public Game1()
         {
+
             graphics = new GraphicsDeviceManager(this);
             graphics.IsFullScreen = false;
             graphics.PreferredBackBufferHeight = 600;
@@ -134,9 +110,6 @@ namespace Game1
             goalSphere = new Sphere(this);
             bullets = new List<Bullet>();
             enemies = new List<Enemy>(totalEnemies);
-
-
-
             tank = new Tank(this);
             //Enemy
             for (int i = 0; i < totalEnemies; i++)
@@ -153,21 +126,11 @@ namespace Game1
             foreach (Bullet bullet in bullets)
             {
                 Components.Add(bullet);
-            }
-
-             
+            }             
             Components.Add(goalSphere);
             Components.Add(tank);
             goalSphere.SetLightDir(source);
-            //tank.setLightPos(lightPos);
         }
-
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
         protected override void Initialize()
         {
             camera = new Camera(this, new Vector3(50, 40, 50),
@@ -177,38 +140,21 @@ namespace Game1
             DiffuseTextureEffect = Content.Load<Effect>("Effects/DiffuseTexture");
             Ambient = new Vector4(ambientMult, ambientMult, ambientMult, 1f);
             this.IsMouseVisible = true;
-
             base.Initialize();
         }
 
-        /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
-        /// </summary>
         protected override void LoadContent()
         {
             font = Content.Load<SpriteFont>("MyFont");
             
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            
-          
-            
  
             //Initialize vertices
-            verts = new VertexPositionColor[3];
-            verts[0] = new VertexPositionColor(new Vector3(0, 1, 0), Color.Blue);
-            verts[1] = new VertexPositionColor(new Vector3(1, -1, 0), Color.Red);
-            verts[2] = new VertexPositionColor(new Vector3(-1, -1, 0), Color.Green);
+            initializeVerts();
 
             //set vertex data in VertexBuffer
-            vertexBuffer = new VertexBuffer(GraphicsDevice, typeof(VertexPositionColor),
-                verts.Length, BufferUsage.None);
-            vertexBuffer.SetData(verts);
-
-            RasterizerState rs = new RasterizerState();
-            rs.CullMode = CullMode.None;
-            GraphicsDevice.RasterizerState = rs;
+            setVertexDataInVertexBuffer();
 
             //new Code Homework4
             dmx = dmy = 0;
@@ -219,51 +165,37 @@ namespace Game1
             cvb = new VertexBuffer(GraphicsDevice, typeof(VertexPositionColor), cverts.Length, BufferUsage.None);
             ceffect = new BasicEffect(GraphicsDevice);
             ceffect.VertexColorEnabled = true;
-            //Homework 5 - Fill up the 2d array
+            // Fill up the 2d array
             hts = new float[gDim+1 , gDim +1];
             rng = new Random(37);
             pnverts = new VertexPositionNormalTexture[gDim * gDim * 6];      
             otherCalcHeights();
             source.Normalize();
-
             normals = new Vector3[gDim+1, gDim+1];
             lights = new float[gDim+1, gDim+1];
-
             for (int i = 0; i < gDim; i++)
             {
                 for (int j = 0; j < gDim; j++)
                 {
                     if ((i != 0) && (j != 0))
-                    {
-                      
+                    {         
                         normals[i,j] = Vector3.Cross(new Vector3(0,hts[i,j+1] - hts[i,j], 1), new Vector3(1, hts[i,j] - hts[i -1, j], 0));
-                        //Console.WriteLine(normals.ToString());
-
                         lights[i, j] = Vector3.Dot(normals[i, j], source);
                     }
                 }
             }
-
             //Spawn Tank
             tank.SetTranslation(new Vector3(2,hts[2,2],2),0);
-
-            
-
             //Spawn Enemies
             foreach (Enemy enemy in enemies)
             {
                 enemy.randomSpawn(RandomNumber(0, gDim), RandomNumber(0, gDim));
-                Console.Write("Enemy spawned");
-
-
             }
-            
              //Make the Square
             float uvTimes = 1.0f / gDim;
             int ind = 0;
             for (int x = 0; x < gDim; x++)
             {
-
                 for (int z = 0; z < gDim; z++)
                 {
                     pnverts[ind].TextureCoordinate = new Vector2(x * uvTimes, z * uvTimes);
@@ -288,36 +220,40 @@ namespace Game1
 
                     pnverts[ind].TextureCoordinate = new Vector2(x * uvTimes, z * uvTimes);
                     pnverts[ind].Position = new Vector3(x, hts[x, z], z);
-                    pnverts[ind++].Normal = normals[x, z];
-                 
+                    pnverts[ind++].Normal = normals[x, z];    
                 }
             }
             setGoalLocation();
 
         }
-        
 
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// game-specific content.
-        /// </summary>
+        private void setVertexDataInVertexBuffer()
+        {
+            vertexBuffer = new VertexBuffer(GraphicsDevice, typeof(VertexPositionColor),
+                verts.Length, BufferUsage.None);
+            vertexBuffer.SetData(verts);
+            RasterizerState rs = new RasterizerState();
+            rs.CullMode = CullMode.None;
+            GraphicsDevice.RasterizerState = rs;
+        }
+
+        private void initializeVerts()
+        {
+            verts = new VertexPositionColor[3];
+            verts[0] = new VertexPositionColor(new Vector3(0, 1, 0), Color.Blue);
+            verts[1] = new VertexPositionColor(new Vector3(1, -1, 0), Color.Red);
+            verts[2] = new VertexPositionColor(new Vector3(-1, -1, 0), Color.Green);
+        }
+        
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
         }
 
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-
-
             //Translation
             //moveKeyboardCamera();
            
@@ -338,7 +274,7 @@ namespace Game1
             //Creating view matrix from position direction and up
             view = Matrix.CreateLookAt(CameraPosition, CameraPosition + CameraDirection, CameraUp);
             //cameraClick();
-            /*
+            
             tTime += (float)(gameTime.ElapsedGameTime.Milliseconds) / 1000.0f;
 
             source.Y = (float)(Math.Cos(MathHelper.TwoPi * (tTime / 20.0f)));
@@ -346,15 +282,11 @@ namespace Game1
             source.Z = (float)(Math.Cos(MathHelper.TwoPi * (tTime / 40.0f)));
             source.X = (float)(Math.Sin(MathHelper.TwoPi * (tTime / 40.0f)));
             source.Normalize();
-             */
+             
             
             base.Update(gameTime);
         }
 
-        /// <summary>
-        /// This is called when the game should draw itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
             //Graphics
@@ -455,10 +387,6 @@ namespace Game1
 
         public Vector3 getNormals(float xPosition, float zPosition)
         {
-            //Beta Code
-            //float findex_X = ((xPosition - ))
-
-            //Code that works
             float findex_X = xPosition;
             int lowIndex_X = (int)findex_X;
             int highIndex_X = lowIndex_X + 1;

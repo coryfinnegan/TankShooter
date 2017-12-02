@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Projects/Game3/Game3/Game3/Content/Effects/DiffSpecTex.fx</SourceFile>
-  <SourceTime>2016-05-05T13:09:10.0729905-05:00</SourceTime>
-  <DestFile>C:/Projects/Game3/Game3/Game3/Content/bin/WindowsGL/Effects/DiffSpecTex.xnb</DestFile>
-  <DestTime>2016-05-05T13:09:51.2809613-05:00</DestTime>
+  <SourceFile>C:/Code/TankShooter/Content/Effects/DiffSpecTex.fx</SourceFile>
+  <SourceTime>2017-12-01T09:12:35.2384054-06:00</SourceTime>
+  <DestFile>C:/Code/TankShooter/Content/bin/WindowsGL/Effects/DiffSpecTex.xnb</DestFile>
+  <DestTime>2017-12-01T19:28:54.9314716-06:00</DestTime>
   <Importer>EffectImporter</Importer>
-  <ImporterTime>2016-03-30T01:36:08-05:00</ImporterTime>
+  <ImporterTime>2017-03-01T09:05:36-06:00</ImporterTime>
   <Processor>EffectProcessor</Processor>
-  <ProcessorTime>2016-03-30T01:36:08-05:00</ProcessorTime>
+  <ProcessorTime>2017-03-01T09:05:36-06:00</ProcessorTime>
   <Parameters>
     <Key>DebugMode</Key>
     <Value>Auto</Value>

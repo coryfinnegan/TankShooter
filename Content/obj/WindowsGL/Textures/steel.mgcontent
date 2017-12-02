@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Projects/Game3/Game3/Game3/Content/Textures/steel.jpg</SourceFile>
-  <SourceTime>2016-05-05T14:13:36.1697633-05:00</SourceTime>
-  <DestFile>C:/Projects/Game3/Game3/Game3/Content/bin/WindowsGL/Textures/steel.xnb</DestFile>
-  <DestTime>2016-05-05T14:25:57.722314-05:00</DestTime>
+  <SourceFile>C:/Code/TankShooter/Content/Textures/steel.jpg</SourceFile>
+  <SourceTime>2017-12-01T09:12:35.6944315-06:00</SourceTime>
+  <DestFile>C:/Code/TankShooter/Content/bin/WindowsGL/Textures/steel.xnb</DestFile>
+  <DestTime>2017-12-01T19:29:01.1714826-06:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2016-03-30T01:36:08-05:00</ImporterTime>
+  <ImporterTime>2017-03-01T09:05:36-06:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2016-03-30T01:36:08-05:00</ProcessorTime>
+  <ProcessorTime>2017-03-01T09:05:36-06:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>
